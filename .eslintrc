@@ -2,7 +2,8 @@
 	"env": {
 		"browser": true,
 		"es2021": true,
-		"jest": true
+		"jest": true,
+		"node": true
 	},
 	"extends": [
 		"eslint:recommended",
@@ -16,7 +17,7 @@
 		"sourceType": "module"
 	},
 	"plugins": ["react", "@typescript-eslint"],
-	"rules": { "react/react-in-jsx-scope": "off" },
+	"rules": { "react/react-in-jsx-scope": "off", "@typescript-eslint/no-var-requires": "off" },
 	"settings": {
 		"react": { "version": "detect" }
 	}
