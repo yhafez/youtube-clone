@@ -3,6 +3,13 @@
   "tabWidth": 2,
   "printWidth": 100,
   "singleQuote": true,
-  "trailingComma": "none",
-  "jsxBracketSameLine": true
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "jsxSingleQuote": false,
+  "proseWrap": "preserve",
+  "useTabs": false,
+  "trailingComma": "es5",
+  "semicolons": false
 }
