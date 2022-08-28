@@ -70,7 +70,7 @@ jobs:
         uses: pnpm/action-setup@v2.2.2
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: '📊 repository visualizer'
         id: diagram

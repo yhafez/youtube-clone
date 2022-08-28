@@ -24,8 +24,5 @@ public
 *.sln
 *.sw?
 
-#lock file
-pnpm-lock.yaml
-
 #tests
 coverage

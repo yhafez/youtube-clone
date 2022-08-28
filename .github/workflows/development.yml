@@ -26,7 +26,7 @@ jobs:
         uses: pnpm/action-setup@v2.2.2
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: '🔍 run tests'
         run: pnpm run test --if-present
@@ -47,7 +47,7 @@ jobs:
         uses: pnpm/action-setup@v2.2.2
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: '🔍 lint code'
         run: pnpm run lint --if-present
