@@ -10,7 +10,8 @@
 		"lint": "pnpm lint:format && pnpm lint:fix ",
 		"lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
 		"lint:format": "prettier  --config ./.prettierrc --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
-		"type-check": "tsc"
+		"type-check": "tsc",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -28,9 +29,10 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.31.1",
-		"husky": "^8.0.1",
+		"husky": "^8.0.0",
 		"lint-staged": "^13.0.3",
 		"prettier": "^2.7.1",
+		"ts-node": "^10.9.1",
 		"typescript": "^4.6.4",
 		"vite": "^3.0.7"
 	},
