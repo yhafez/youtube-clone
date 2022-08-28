@@ -31,7 +31,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: '🔍 run tests'
-        run: pnpm run test --if-present
+        run: pnpm test
 
   lint:
     name: Code standards
@@ -54,4 +54,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: '🔍 lint code'
-        run: pnpm run lint --if-present
+        run: pnpm lint
