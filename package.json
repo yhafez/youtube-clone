@@ -76,7 +76,7 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js}": [
-			"eslint --config .eslintrc.js"
+			"eslint --config .eslintrc"
 		],
 		"*.{ts,tsx,js,json,html,yml,css,less,scss,md}": [
 			"prettier --write"
