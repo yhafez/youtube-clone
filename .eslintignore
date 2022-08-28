@@ -2,3 +2,6 @@
 /build
 /dist
 /public
+.DS_Store
+dist-ssr
+*.local
