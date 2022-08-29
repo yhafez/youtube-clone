@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.1.0](https://github.com/yhafez/vite-client-template/compare/v1.0.2...v1.1.0) (2022-08-29)
+
+
+### 🍕 Features
+
+* add test to pre-commit ([c2e4d5f](https://github.com/yhafez/vite-client-template/commit/c2e4d5f1ee0a99b5e99c7247dbaa11e3f121f3e2))
+
 ### [1.0.2](https://github.com/yhafez/vite-client-template/compare/v1.0.1...v1.0.2) (2022-08-29)
 
 
