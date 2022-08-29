@@ -32,7 +32,7 @@
 	"scripts": {
 		"start": "vite",
 		"dev": "docker-compose -f docker-compose.dev.yml up",
-		"build": "tsc -p tsconfig.prod.json && vite build",
+		"build": "vite build",
 		"preview": "vite preview",
 		"test": "NODE_ENV=test jest",
 		"lint": "pnpm lint:format && pnpm lint:fix ",
