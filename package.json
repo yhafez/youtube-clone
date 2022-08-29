@@ -30,9 +30,9 @@
 	"main": "src/index.tsx",
 	"typings": "src/vite-env.d.ts",
 	"scripts": {
+		"start": "vite build",
 		"start:dev": "vite",
 		"dev": "docker-compose -f docker-compose.dev.yml up",
-		"build": "vite build",
 		"preview": "vite preview",
 		"test": "NODE_ENV=test jest",
 		"lint": "pnpm lint:format && pnpm lint:fix ",

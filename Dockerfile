@@ -22,4 +22,4 @@ COPY . ./
 EXPOSE 3000
 
 # start app
-CMD ["pnpm", "dev"]
+CMD ["pnpm", "start:dev"]
