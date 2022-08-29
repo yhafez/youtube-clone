@@ -90,8 +90,8 @@ jobs:
       - name: '📂 production artifacts'
         uses: actions/upload-artifact@v2
         with:
-          name: build
-          path: build
+          name: dist
+          path: dist
 
   release:
     environment:
@@ -101,7 +101,7 @@ jobs:
     needs:
       - test
       - docker
-      - build
+      - dist
     runs-on: ubuntu-latest
     steps:
       - name: '☁️ checkout repository'
@@ -122,8 +122,8 @@ jobs:
       - name: '📂 download build artifacts'
         uses: actions/download-artifact@v2
         with:
-          name: build
-          path: build
+          name: dist
+          path: dist
 
       - name: '📂 download diagram artifacts'
         uses: actions/download-artifact@v2
@@ -147,6 +147,6 @@ jobs:
         uses: geekyeggo/delete-artifact@v1
         with:
           name: |
-            build
+            dist
             docker
             diagram
