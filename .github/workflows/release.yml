@@ -81,7 +81,7 @@ jobs:
           excluded_paths: 'node_modules,build,.storybook,.netlify,.github,npm-shrinkwrap.json'
           output_file: 'dist/diagram.svg'
           should_push: false
-          root_path: 'src/'
+          root_path: '/'
           artifact_name: 'diagram'
 
       - name: '🚀 static app'
