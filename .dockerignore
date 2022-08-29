@@ -4,6 +4,7 @@ node_modules
 build
 dist
 public
+coverage
 .dockerignore
 Dockerfile
 Dockerfile.prod
