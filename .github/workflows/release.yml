@@ -78,7 +78,7 @@ jobs:
         id: diagram
         uses: githubocto/repo-visualizer@0.7.1
         with:
-          excluded_paths: 'node_modules,build,dist,.storybook,.netlify,.github,npm-shrinkwrap.json'
+          excluded_paths: 'node_modules,dist,.storybook,.netlify,.github,npm-shrinkwrap.json'
           output_file: 'diagram.svg'
           should_push: false
           root_path: 'src/'
@@ -90,8 +90,8 @@ jobs:
       - name: '📂 production artifacts'
         uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: build
+          path: build
 
   release:
     environment:
@@ -101,7 +101,7 @@ jobs:
     needs:
       - test
       - docker
-      - dist
+      - build
     runs-on: ubuntu-latest
     steps:
       - name: '☁️ checkout repository'
@@ -122,8 +122,8 @@ jobs:
       - name: '📂 download build artifacts'
         uses: actions/download-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: build
+          path: build
 
       - name: '📂 download diagram artifacts'
         uses: actions/download-artifact@v2
@@ -147,6 +147,6 @@ jobs:
         uses: geekyeggo/delete-artifact@v1
         with:
           name: |
-            dist
+            build
             docker
             diagram
