@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.0.2](https://github.com/yhafez/vite-client-template/compare/v1.0.1...v1.0.2) (2022-08-29)
+
+
+### 🐛 Bug Fixes
+
+* start script ([ca152d0](https://github.com/yhafez/vite-client-template/commit/ca152d09cb0702d6c8a045a2f012a1089de95ef3))
+
 ### [1.0.1](https://github.com/yhafez/vite-client-template/compare/v1.0.0...v1.0.1) (2022-08-29)
 
 
