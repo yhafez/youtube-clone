@@ -7,6 +7,7 @@ specifiers:
   '@babel/preset-typescript': ^7.18.6
   '@commitlint/cli': ^17.1.1
   '@commitlint/config-conventional': ^17.1.0
+  '@mui/icons-material': ^5.10.3
   '@storybook/addon-actions': ^6.5.10
   '@storybook/addon-essentials': ^6.5.10
   '@storybook/addon-interactions': ^6.5.10
@@ -55,6 +56,7 @@ devDependencies:
   '@babel/preset-typescript': 7.18.6_@babel+core@7.18.13
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
+  '@mui/icons-material': 5.10.3_7v64pk2mkrohwh22gx7lrz5ive
   '@storybook/addon-actions': 6.5.10_biqbaboplfbrettd7655fr4n2y
   '@storybook/addon-essentials': 6.5.10_vuognd74ufutscmc7mvmxw73yi
   '@storybook/addon-interactions': 6.5.10_e64i6yi2bzi5ltvvxmfyaiafya
@@ -2281,6 +2283,22 @@ packages:
     dependencies:
       call-me-maybe: 1.0.1
       glob-to-regexp: 0.3.0
+    dev: true
+
+  /@mui/icons-material/5.10.3_7v64pk2mkrohwh22gx7lrz5ive:
+    resolution: {integrity: sha512-o0kbUlsWCBtCE0wP33cGKbyryCh7kpm2EECYMPDmWrLhbA+HUODXIdhiTFS26szp2xXo9HY1lEx0ufeJ+tddYw==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      '@mui/material': ^5.0.0
+      '@types/react': ^17.0.0 || ^18.0.0
+      react: ^17.0.0 || ^18.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.18.9
+      '@types/react': 18.0.18
+      react: 18.2.0
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
