@@ -4,19 +4,13 @@ import { Sidebar, Videos } from './'
 import { fetchFromAPI } from '../utils/fetchFromAPI'
 
 import { IVideo } from '../models/Videos'
-import { Co2Sharp } from '@mui/icons-material'
 
 const Feed = () => {
 	const [selectedCategory, setSelectedCategory] = useState('New')
 	const [videos, setVideos] = useState<IVideo[]>([])
 
 	useEffect(() => {
-		fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then(data => {
-			for (const video of data.items) {
-				console.log(video.snippet.title)
-			}
-			setVideos(data.items)
-		})
+		fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then(data => setVideos(data.items))
 	}, [selectedCategory])
 
 	return (

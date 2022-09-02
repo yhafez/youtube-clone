@@ -7,7 +7,13 @@ import { demoProfilePicture } from '../utils/constants'
 
 import { IVideo } from '../models/Videos'
 
-const ChannelCard = ({ channelDetail }: { channelDetail: IVideo }) => {
+const ChannelCard = ({
+	channelDetail,
+	marginTop,
+}: {
+	channelDetail: IVideo | undefined
+	marginTop?: string | number
+}) => {
 	return (
 		<Box
 			sx={{
@@ -19,6 +25,7 @@ const ChannelCard = ({ channelDetail }: { channelDetail: IVideo }) => {
 				width: { xs: '356px', md: '320px' },
 				height: '326px',
 				margin: 'auto',
+				marginTop,
 			}}
 		>
 			<Link to={`/channel/${channelDetail?.id?.channelId}`}>
