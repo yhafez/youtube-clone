@@ -17,13 +17,20 @@ const Feed = () => {
 		<Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
 			<Box
 				sx={{
+					display: 'flex',
+					flexDirection: { md: 'column', sm: 'row' },
 					height: { sx: 'auto', md: '92vh' },
 					borderRight: '1px solid #3d3d3d',
 					px: { sx: 0, md: 2 },
+					overflow: 'hidden',
 				}}
 			>
 				<Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-				<Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: '#fff' }}>
+				<Typography
+					className="copyright"
+					variant="body2"
+					sx={{ mt: 1.5, color: '#fff', display: { sm: 'none', md: 'initial' } }}
+				>
 					Copyright © 2022 YH Youtube Clone
 				</Typography>
 			</Box>

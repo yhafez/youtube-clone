@@ -13,7 +13,11 @@ const Sidebar = ({
 	return (
 		<Stack
 			direction="row"
-			sx={{ overFlowY: 'auto', height: { sx: 'auto', md: '95%' }, flexDirection: { md: 'column' } }}
+			sx={{
+				overflow: 'auto',
+				height: { sx: 'auto' },
+				flexDirection: { md: 'column' },
+			}}
 		>
 			{categories.map(category => (
 				<button

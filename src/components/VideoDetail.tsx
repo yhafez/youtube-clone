@@ -23,7 +23,8 @@ const VideoDetail = () => {
 		)
 	}, [id])
 
-	if (!videoDetail?.snippet) return 'Loading...'
+	if (!videoDetail?.snippet || !videoDetail?.statistics)
+		return <Typography>'Loading...'</Typography>
 
 	const {
 		snippet: { title, channelId, channelTitle },
