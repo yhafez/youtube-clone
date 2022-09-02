@@ -28,7 +28,9 @@ export interface Snippet {
 }
 
 export interface Statistic {
-	subscriberCount: string
+	subscriberCount?: string
+	viewCount?: string
+	likeCount?: string
 }
 
 export interface IVideo {

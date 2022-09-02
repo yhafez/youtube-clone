@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Box } from '@mui/material'
+import { Stack, Box, Typography } from '@mui/material'
 import { VideoCard, ChannelCard } from './'
 import { IVideo } from '../models/Videos'
 
@@ -10,6 +10,8 @@ const Videos = ({
 	videos: IVideo[]
 	direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse' | undefined
 }) => {
+	if (!videos?.length) return <Typography>Loading...</Typography>
+
 	return (
 		<Stack
 			direction={direction || 'row'}
